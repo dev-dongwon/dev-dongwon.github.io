@@ -38,7 +38,7 @@ owner:
   job: "Back-End Developer"
   bio: ""
   email: dev.dongwonkim@gmail.com
-  disqus-shortname:
+  disqus-shortname: dev-dongwon
   twitter: #username
   facebook: #username
   google:
@@ -48,7 +48,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: dev-dongwon
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
