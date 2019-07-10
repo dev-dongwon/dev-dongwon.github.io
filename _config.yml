@@ -3,18 +3,18 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: 개발항해일지
+email: dev.dongwonkim@gmail.com
+description: 개발이라는 바다를 항해하며 꿈꾸고 기록하는 공간입니다
 url: # the base hostname & protocol for your site
-keywords: ["blog", "jekyll"]
+keywords: ["blog", "jekyll", "개발", "개발 블로그", "developer", "javascript"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Asia/Seoul
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,11 +33,11 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
+  name: dev-dongwon
   avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  job: "Back-End Developer"
+  bio: ""
+  email: dev.dongwonkim@gmail.com
   disqus-shortname:
   twitter: #username
   facebook: #username
