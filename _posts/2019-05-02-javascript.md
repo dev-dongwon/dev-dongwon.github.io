@@ -3,7 +3,7 @@ layout: post
 title:  "[JS] JSON.stringfy()"
 comments: true
 excerpt: "JSON.stringfy()를 이해하자"
-categories: [js]
+categories: [JS]
 tags: ['JS']
 author: dev-dongwon
 ---
