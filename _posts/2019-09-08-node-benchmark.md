@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[NODE] 노드의 내부를 파헤쳐보자 (4)"
-excerpt: "multitask 환경에서 trhead pool 최적화를 해보자"
+excerpt: "multitask를 수행할 때 thread pool에서 일어나는 일들"
 categories: [NODE]
 tags: ['NODE']
 author: dev-dongwon
@@ -10,7 +10,7 @@ comments: true
 
 
 
-# Node multitask와 thread pool 최적화
+# multitask 상황에서 node의 동작
 
 ## 실험
 
