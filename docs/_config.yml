@@ -4,7 +4,7 @@ description         : >-
                       start line
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : dev-dongwon/dev-dongwon.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : YoussefRaafatNasry/portfolYOU
+# remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
 ### Plugins ###
@@ -17,13 +17,12 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
 
 
 ### Author Info ###
 author:
   name              : Dongwon Kim
-  image             : https://media-exp1.licdn.com/dms/image/C5603AQE0Hcxk8y3guw/profile-displayphoto-shrink_200_200/0/1611328103862?e=1617235200&v=beta&t=N-y622oljFzg8UROt8UoP_pCcV4GKnHnq6vGCSTUoUo
+# image             : 
 # behance           : your_username
 # dribbble          : your_username
   email             : dev.dongwonkim@gmail.com
