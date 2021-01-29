@@ -1,10 +1,12 @@
 ### Site Settings ###
-title               : 개발항해일지
+title               : portfolYOU
 description         : >-
-                      start line
-baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : dev-dongwon    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-# remote_theme        : YoussefRaafatNasry/portfolYOU
+                      I turn coffee :coffee: into code,
+                      use tabs over spaces
+                      and never broke production.
+baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
 ### Plugins ###
@@ -17,28 +19,29 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
+  - documentation/partials/**                           # For Documentation Only
 
 
 ### Author Info ###
 author:
-  name              : Dongwon Kim
-  image             : https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_1375463840.2e16d0ba.fill-1200x630.jpg
-# behance           : your_username
+  name              : John Doe
+  image             : https://i.imgur.com/uyDNQnn.jpg
+  behance           : your_username
 # dribbble          : your_username
-  email             : dev.dongwonkim@gmail.com
-# facebook          : your_username
-  github            : dev-dongwon
+  email             : username@domain.com
+  facebook          : your_username
+  github            : your_username
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : 동원-김-675b43198
-# medium            : your_username
+  linkedin          : your_username
+  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-# twitter           : your_username
+  twitter           : your_username
 # vimeo             : your_username
 # youtube           : your_channel_name
 # keybase           : your_username
@@ -53,31 +56,39 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+  elements:                                             # For Documentation Only
+    output: true                                        # For Documentation Only
+
 
 ### Disqus ###
 disqus:
-  shortname: dev-dongwon                   # Your website Shortname on disqus
+  shortname: your-short-name-disqus                     # Your website Shortname on disqus
 
 
 ### Analytics ###
 analytics:
-  enabled: true                                        # Set true to enable analytics
+  enabled: false                                        # Set true to enable analytics
   google:
-    tracking_id: UA-147263127-1
+    tracking_id: your-google-tracking-id
 
 
 ### Defaults for collections ###
 defaults:
   - scope:
-      path: "/projects"
+      path: ""
       type: "projects"
     values:
       layout: "page"
+  - scope:                                              # For Documentation Only
+      path: ""                                          # For Documentation Only
+      type: "elements"                                  # For Documentation Only
+    values:                                             # For Documentation Only
+      layout: "element"                                 # For Documentation Only
   - scope:
-      path: "/posts"
+      path: ""
       type: "posts"
     values:
-      comments: true                                   # Set to true to enable disqus comments
+      comments: false                                   # Set to true to enable disqus comments
 
 ### Exclude from processing ###
 exclude:
