@@ -49,6 +49,10 @@ footer_links:
     url: https://github.com/dev-dongwon
     icon: fa fa-github-square
 
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/dongwonkim/
+    icon: fa fa-linkedin
+
 # Enter your copyright text if you wish to override the default one.
 #copyright: "This site is made with <3 by *me, myself, and I*."
 
