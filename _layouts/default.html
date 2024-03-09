@@ -1,16 +1,12 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en" }}">
+<html lang="en">
   <head>
     {% include meta.html %}
 
-    {% seo title=false %}
-    {% if page.title %}
-    <title>{{ page.title }}&#32;&#45;&#32;{{ site.description }}&#32;&#45;&#32;{{ site.title }}</title>
-    {% else %}
-    <title>{{ site.description }}&#32;&#45;&#32;{{ site.title }}</title>
-    {% endif %}
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css"/>
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/favicon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/favicon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/favicon-72x72.png">
@@ -30,22 +26,22 @@
     <meta name="msapplication-TileImage" content="/assets/image/favicon-144x144.png">
     <meta name="msapplication-config" content="/assets/image/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" media="print" onload="this.media='all'"/>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.5/plyr.css" media="print" onload="this.media='all'"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" media="print" onload="this.media='all'"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+
   </head>
 
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar | absolute_url }}" width="70" height="70" /></a>
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}"/></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
@@ -80,19 +76,17 @@
             {% if site.copyright %}
             {{ site.copyright | markdownify }}
             {% else %}
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: site.title }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/forever-jekyll/forever-jekyll" rel="nofollow">Forever Jekyll</a>.</p>
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.name }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/hakerdefo/forever-jekyll" rel="nofollow">Forever Jekyll</a>.</p>
             {% endif %}
           </div>
         </footer>
       </div>
     </div>
 
-    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://cdn.plyr.io/3.6.4/plyr.polyfilled.js"></script>
     <script>
-      const player = new Plyr("#player", { noCookie: true, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1 , enablejsapi: 1, autoplay: 0, focused: true, global: false });
-      window.player = player;
+      const player = new Plyr('#player');
     </script>
-
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({
@@ -102,11 +96,11 @@
       });
     </script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"
             onload="renderMathInElement(document.body,{
                     delimiters: [
                     { left: '$$',  right: '$$',  display: true  },

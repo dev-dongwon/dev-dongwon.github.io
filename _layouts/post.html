@@ -7,7 +7,6 @@ layout: default
 
   <div class="entry">
     {{ content }}
-    <hr>
   </div>
 
   <div class="date">
@@ -31,6 +30,14 @@ layout: default
     <i class="fa fa-share-alt-square fa-fw" aria-hidden="true"></i>&nbsp;Share:&nbsp;
     {% include share-buttons.html %}
   </div>
+
+  <script src="https://utteranc.es/client.js"
+  repo="dev-dongwon/dev-dongwon.github.io"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+  </script>
 
   <div class="related-posts">
     {% include related-posts.html %}
