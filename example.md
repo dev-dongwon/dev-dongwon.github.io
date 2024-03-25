@@ -4,9 +4,9 @@ title: Hello World
 categories: [content, demo]
 ---
 
-Hello and welcome. The only purpose of this post is to greet you when your site comes alive for the first time.  
-This post will demonstrate some of the more common content & elements found in posts.  
-Feel free to delete this post when you are ready to publish your first post.  
+Hello and welcome. The only purpose of this post is to greet you when your site comes alive for the first time.
+This post will demonstrate some of the more common content & elements found in posts.
+Feel free to delete this post when you are ready to publish your first post.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
@@ -71,7 +71,7 @@ float Q_rsqrt( float number )
 	x2 = number * 0.5F;
 	y  = number;
 	i  = * ( long * ) &y;                       // evil floating point bit level hacking
-	i  = 0x5f3759df - ( i >> 1 );               // what the fuck? 
+	i  = 0x5f3759df - ( i >> 1 );               // what the fuck?
 	y  = * ( float * ) &i;
 	y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
 //	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
