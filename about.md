@@ -1,5 +1,9 @@
-<!doctype html>
-<html lang="en">
+---
+layout: page
+title:
+permalink: /about
+---
+
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,10 +11,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="resume/styles.css">
     <base target="_blank">
 </head>
 <body>
@@ -27,7 +30,7 @@
                         <time datetime="" class="small">Last update: June 16, 2024</time>
                     </p>
                     <p>
-                        <span class="screen"><a href="william-shakespeare.poet-playwright-and-actor.pdf"><i class="far fa-file-pdf"></i>Download PDF version</a></span>
+                        <span class="screen"><a href="resume/william-shakespeare.poet-playwright-and-actor.pdf"><i class="fa fa-file-pdf-o"></i>Download PDF version</a></span>
                         <span class="print">Up-to-date version of CV is available at <a href="https://dev-dongwon.github.io/cv"
                                                                                         class="text-nowrap"><i
                             class="fab fa-github" aria-hidden="true"></i>https://dev-dongwon.github.io/cv</a></span>
@@ -35,7 +38,7 @@
                 </div>
             </div>
             <div class="col-4 col-md-3 col-lg-2 offset-lg-1 d-none d-md-block align-md-self-center text-center">
-                <img src="photo.jpg" class="rounded-circle img-fluid" alt="Personal photo">
+                <img src="resume/photo.jpg" class="rounded-circle img-fluid" alt="Personal photo">
             </div>
             <div class="col-print-6 col-12 col-md-5 offset-lg-1 col-lg-4">
                 <ul class="list-group list-group-flush">
@@ -46,12 +49,12 @@
                     <li class="list-group-item d-flex justify-content-between align-items-start">
                         <span class="text-nowrap">Wiki</span>
                         <span class="text-nowrap"><a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <i class="fa-brands fa-wikipedia-w fact-icon"></i>William_Shakespeare
+                  <i class="fa fa-github-square fa fact-icon"></i>William_Shakespeare
                 </a></span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-start">
                         <span class="text-nowrap">Twitter</span>
-                        <span class="text-nowrap"><a href="https://twitter.com/shakespeare"><i class="fa-brands fa-twitter fact-icon"></i>Shakespeare</a></span>
+                        <span class="text-nowrap"><a href="https://twitter.com/shakespeare"><i class="fa fa-linkedin fact-icon"></i>Shakespeare</a></span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-start">
                         <span class="text-nowrap">Email</span>
@@ -251,4 +254,3 @@
     </div>
 </div>
 </body>
-</html>
